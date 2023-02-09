@@ -1,28 +1,5 @@
 <div class="face-snap-card" [ngClass]="{ 'snapped': buttonText === 'Oops, un Snap!' }">
-  <!-- | number : '1.0-2'  => format nombre décimal avec au mini 1 chiffre avant la virgule, mini 0 chiffre après la virgule et maxi 2 -->
-  <p>{{ "43343854.65" | number: '1.0-2' }}</p>
-  <!-- | percent => formatage en % avec arrondit à l'entier le plus proche -->
-  <p>{{ "0.4673" | percent: '1.0-1' }}</p>
-    <!-- | currency  -->
-    <p>{{ "339.95" | currency: 'EUR':'code' }}</p>
-   <!-- string interpolation {{ }} , utilisation d'une pipe | pour le formattage d'une chaine à l'affichage uniquement
-   lowercase -> tout en minuscule
-   uppercase -> tout en majuscule
-   titlecase -> 1ere lettre de chaque mot en majuscule
-  -->
   <h2>{{ faceSnap.title | titlecase }}</h2>
-  <!-- formatage de la date grâce au DatePipe, exemples :
-  | date : "d MMMM yyyy, à HH:mm:ss"
-  | date : 'mediumDate'
-  | date : 'longdate'
-  | date : 'mediumTime'
-  -->
-  <p>Mis en ligne {{ faceSnap.createdDate |  date : "le d MMMM yyyy, à HH:mm:ss" }}</p>
-  <p><img [src]="faceSnap.imageUrl" [alt]="faceSnap.title"></p>
   <p>{{ faceSnap.description }}</p>
-  <p *ngIf="faceSnap.Location">Photo prise à {{ faceSnap.Location }}</p>
-  <p>
-    <button (click)="onSnap()">{{ buttonText }}</button>
-    <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps + ',0)'}">{{ faceSnap.snaps }}</span>
-  </p>
+  <button (click)="onViewFaceSnap()">VIEW</button>
 </div>
