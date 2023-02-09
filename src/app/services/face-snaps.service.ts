@@ -11,16 +11,16 @@ export class FaceSnapsService {
       id: 1,
       title : 'Tom et Chloé',
       description : 'Les Super-mini-Cuistos',
-      imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      imageUrl : 'assets/tom_chloe_cuistos.jpg',
       createdDate : new Date(),
       snaps : 159
     },
 
     {
       id: 2,
-      title : 'Archibald',
-      description : 'Il est tout mignons',
-      imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      title : 'Tour Eiffel',
+      description : 'Quel monument!',
+      imageUrl : 'assets/tour_eiffel.jpeg',
       createdDate : new Date(),
       snaps : 90,
       Location : "Paris, France"
@@ -28,39 +28,21 @@ export class FaceSnapsService {
 
     {
       id: 3,
-      title : 'Nounours',
-      description : 'Sosie d\'Archibald',
-      imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      title : 'Licorne',
+      description : 'Un animal fantastique!',
+      imageUrl : 'assets/licorne.jpg',
       createdDate : new Date(),
       snaps : 255,
       Location : "Paris, France"
     },
-    {
-      id: 4,
-      title : 'Tom et Chloé',
-      description : 'Les Super-mini-Cuistos',
-      imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      createdDate : new Date(),
-      snaps : 0
-    },
 
     {
-      id: 5,
+      id: 4,
       title : 'Archibald',
       description : 'Il est tout mignons',
       imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       createdDate : new Date(),
       snaps : 0,
-      Location : "Paris, France"
-    },
-
-    {
-      id: 6,
-      title : 'Nounours',
-      description : 'Sosie d\'Archibald',
-      imageUrl : 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-      createdDate : new Date(),
-      snaps : 5,
       Location : "Paris, France"
     }
     ]

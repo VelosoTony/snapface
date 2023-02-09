@@ -34,5 +34,4 @@ export class FaceSnapComponent implements OnInit {
     }
   }
 
-
 }
